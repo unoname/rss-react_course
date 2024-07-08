@@ -3,9 +3,10 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -19,4 +20,10 @@ module.exports = {
     "react-compiler/react-compiler": "error",
     '@typescript-eslint/no-explicit-any': 'error',
   },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    
+  }
 }
