@@ -1,0 +1,3 @@
+interface DataViewProps {
+	data: Data[];
+}
