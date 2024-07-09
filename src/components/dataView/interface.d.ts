@@ -1,3 +1,0 @@
-interface DataViewProps {
-	data: Data[];
-}
