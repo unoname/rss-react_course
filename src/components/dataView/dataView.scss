@@ -1,0 +1,14 @@
+.listItem {
+	display: flex;
+	gap: calc(100vw / 30);
+	flex-wrap: wrap;
+	width: 100dvw;
+	ul {
+		cursor: pointer;
+		background-color: aqua;
+
+		li {
+			list-style-type: none;
+		}
+	}
+}
